@@ -1,9 +1,9 @@
 //
 //  MovieStore.swift
-//  SwiftUIMovieDb
+//  pruebaJesus
 //
-//  Created by Alfian Losari on 23/05/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
+//  Created by Jesus Ervin Chapi Suyo on 13/09/24.
+//  Copyright © 2024 Jesus Ervin Chapi Suyo. All rights reserved.
 //
 
 import Foundation
@@ -13,7 +13,8 @@ class MovieStore: MovieService {
     static let shared = MovieStore()
     private init() {}
     
-    private let apiKey = "NEWSAPI"
+    private let apiKey = "6b7a61d3b195564c465ac3a95521fb11"
+    private let token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YjdhNjFkM2IxOTU1NjRjNDY1YWMzYTk1NTIxZmIxMSIsIm5iZiI6MTcyNjA5Nzg4MS4zMDE0NDIsInN1YiI6IjY2ZTIxMWNmMjAyNGQyYzhkNjkwNzA3YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kLsA7BUC3RHetnl53KsMCHdEiVN5tHkhs5vkr3h1_TU"
     private let baseAPIURL = "https://api.themoviedb.org/3"
     private let urlSession = URLSession.shared
     private let jsonDecoder = Utils.jsonDecoder
@@ -61,11 +62,25 @@ class MovieStore: MovieService {
         
         urlComponents.queryItems = queryItems
         
+        
+        //we add token
+        guard let urlRequest = urlComponents.url else {
+            throw MovieError.invalidEndpoint
+        }
+        
+        var movieRequest = URLRequest(url: urlRequest)
+        
+        movieRequest.setValue( //3
+            "Bearer \(token)",
+            forHTTPHeaderField: "Authorization"
+        )
+        
+        
         guard let finalURL = urlComponents.url else {
             throw MovieError.invalidEndpoint
         }
         
-        let (data, response) = try await urlSession.data(from: finalURL)
+        let (data, response) = try await urlSession.data(for: movieRequest)
         
         guard let httpResponse = response as? HTTPURLResponse, 200..<300 ~= httpResponse.statusCode else {
             throw MovieError.invalidResponse

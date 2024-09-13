@@ -1,9 +1,9 @@
 //
 //  MovieListView.swift
-//  SwiftUIMovieDB
+//  pruebaJesus
 //
-//  Created by Alfian Losari on 22/05/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
+//  Created by Jesus Ervin Chapi Suyo on 22/05/20.
+//  Copyright © 2024 Jesus Ervin Chapi Suyo. All rights reserved.
 //
 
 import SwiftUI
@@ -30,7 +30,7 @@ struct MovieHomeView: View {
             retryAction: { loadMovies(invalidateCache: true) })
         )
         .listStyle(.plain)
-        .navigationTitle("XCA Movies")
+        .navigationTitle("What do you want to watch?")
     }
     
     @Sendable

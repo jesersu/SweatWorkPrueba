@@ -1,9 +1,9 @@
 //
 //  ContentView.swift
-//  SwiftUIMovieDb
+//  pruebaJesus
 //
-//  Created by Alfian Losari on 23/05/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
+//  Created by Jesus Ervin Chapi Suyo on 13/09/24.
+//  Copyright © 2024 Jesus Ervin Chapi Suyo. All rights reserved.
 //
 
 import SwiftUI
@@ -18,6 +18,9 @@ struct ContentView: View {
             NavigationView { MovieSearchView() }
             .tabItem { Label("Search", systemImage: "magnifyingglass")}
             .tag(1)
+            NavigationView { MovieSearchView() }
+            .tabItem { Label("Search", systemImage: "magnifyingglass")}
+            .tag(2)
         }
     }
 }
