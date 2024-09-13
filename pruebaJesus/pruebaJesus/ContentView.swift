@@ -19,7 +19,7 @@ struct ContentView: View {
             .tabItem { Label("Search", systemImage: "magnifyingglass")}
             .tag(1)
             NavigationView { MovieSearchView() }
-            .tabItem { Label("Search", systemImage: "magnifyingglass")}
+            .tabItem { Label("Watch list", systemImage: "magnifyingglass")}
             .tag(2)
         }
     }

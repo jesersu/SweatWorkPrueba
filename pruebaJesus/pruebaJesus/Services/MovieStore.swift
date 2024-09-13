@@ -16,6 +16,7 @@ class MovieStore: MovieService {
     private let apiKey = "6b7a61d3b195564c465ac3a95521fb11"
     private let token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YjdhNjFkM2IxOTU1NjRjNDY1YWMzYTk1NTIxZmIxMSIsIm5iZiI6MTcyNjA5Nzg4MS4zMDE0NDIsInN1YiI6IjY2ZTIxMWNmMjAyNGQyYzhkNjkwNzA3YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.kLsA7BUC3RHetnl53KsMCHdEiVN5tHkhs5vkr3h1_TU"
     private let baseAPIURL = "https://api.themoviedb.org/3"
+    
     private let urlSession = URLSession.shared
     private let jsonDecoder = Utils.jsonDecoder
     

@@ -17,9 +17,10 @@ class Utils {
         return jsonDecoder
     }()
     
+    // to set format yyyy-mm-dd
     static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-mm-dd"
-        return dateFormatter
+        return dateFormatter 
     }()
 }

@@ -40,6 +40,7 @@
 		8BF90B66272E44BF001E978D /* DataFetchPhaseOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF90B65272E44BF001E978D /* DataFetchPhaseOverlayView.swift */; };
 		8BF90B68272E47CA001E978D /* MovieSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF90B67272E47CA001E978D /* MovieSection.swift */; };
 		8BF90B6A272E4956001E978D /* MovieHomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF90B69272E4956001E978D /* MovieHomeState.swift */; };
+		912A76BC2C94D2060073A7F9 /* LazyGridThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A76BB2C94D2060073A7F9 /* LazyGridThumbnailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		8BF90B65272E44BF001E978D /* DataFetchPhaseOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchPhaseOverlayView.swift; sourceTree = "<group>"; };
 		8BF90B67272E47CA001E978D /* MovieSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSection.swift; sourceTree = "<group>"; };
 		8BF90B69272E4956001E978D /* MovieHomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHomeState.swift; sourceTree = "<group>"; };
+		912A76BB2C94D2060073A7F9 /* LazyGridThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridThumbnailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				8B755F4724796B8200FD58C8 /* LoadingView.swift */,
 				8BE793F52479FD1000850C45 /* MovieDetailView.swift */,
 				8BF4147C247A37A800F5BE68 /* MovieSearchView.swift */,
+				912A76BB2C94D2060073A7F9 /* LazyGridThumbnailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				8B755F4324796A8700FD58C8 /* MovieListState.swift in Sources */,
 				8BE793FA247A277B00850C45 /* SafariView.swift in Sources */,
 				8BF90B68272E47CA001E978D /* MovieSection.swift in Sources */,
+				912A76BC2C94D2060073A7F9 /* LazyGridThumbnailView.swift in Sources */,
 				8B755F0E247936D300FD58C8 /* AppDelegate.swift in Sources */,
 				8B755F4824796B8200FD58C8 /* LoadingView.swift in Sources */,
 				8B755F10247936D300FD58C8 /* SceneDelegate.swift in Sources */,
