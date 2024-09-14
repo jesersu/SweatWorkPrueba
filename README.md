@@ -10,6 +10,17 @@ Below 3 categories should be shown:
 - **Top Rated** 
 
 These categories should be displayed in grid form, limiting to only 6 movies
+## Features
+For this project we used:
+- LazyHStack and LazyVGrid: Views are created only when they are about to appear on the screen, which optimizes memory usage and performance1.
+    ![Image](https://i.ibb.co/Xb0vJxn/Captura-de-pantalla-2024-09-14-a-la-s-6-05-27-p-m.png)
+
+    ![Image](https://i.ibb.co/mS2jN0x/Captura-de-pantalla-2024-09-14-a-la-s-6-06-03-p-m.png)
+- URLSession: Allows us to perform network data transfer tasks, such as downloading data from and uploading data to endpoints indicated by URLs.
+    ![URLSESSION](https://i.ibb.co/DGkTwp5/Captura-de-pantalla-2024-09-14-a-la-s-6-13-01-p-m.png)
+- Use of Singleton: We created a class "MovieStore" with private initializer and only one public constant, to let us use this single instance.
+    ![SINGLETON](https://i.ibb.co/6WRTDm7/Captura-de-pantalla-2024-09-14-a-la-s-6-18-44-p-m.png)
+- Cross platform
 
 ### Answer and write 
 
@@ -23,11 +34,9 @@ These categories should be displayed in grid form, limiting to only 6 movies
 
     - Improve Maintainability: When a class has only one reason to change.
 
-    - Facilitate Reusability: Classes with a single responsibility are more likely to be reusable in different contexts because they are not tightly coupled with other functionalities2.
+    - Facilitate Reusability: Classes with a single responsibility are more likely to be reusable in different contexts because they are not tightly coupled with other functionalities.
 
-    - Simplify Testing: A class with a single responsibility is easier to test because it has a well-defined behavior and fewer dependencies4. functionalities2.
-
-    Simplify Testing: A class with a single responsibility is easier to test because it has a well-defined behavior and fewer dependencies4.
+    - Simplify Testing: A class with a single responsibility is easier to test because it has a well-defined behavior and fewer dependencies. 
 
 - What characteristics does, in your opinion, a “good” code or clean code have?
 
