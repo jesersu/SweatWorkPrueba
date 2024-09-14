@@ -11,6 +11,7 @@ import SwiftUI
 enum MovieThumbnailType {
     case poster(showTitle: Bool = true)
     case backdrop
+    case gridView
 }
 
 struct MovieThumbnailView: View {
@@ -27,6 +28,8 @@ struct MovieThumbnailView: View {
                 imageLoader.loadImage(with: movie.posterURL)
             case .backdrop:
                 imageLoader.loadImage(with: movie.backdropURL)
+            case .gridView:
+                imageLoader.loadImage(with: movie.posterURL)
             }
         }
     }

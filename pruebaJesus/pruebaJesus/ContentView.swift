@@ -10,18 +10,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            NavigationView { MovieHomeView() }
-            .tabItem { Label("Home", systemImage: "film")}
-            .tag(0)
-            
-            NavigationView { MovieSearchView() }
-            .tabItem { Label("Search", systemImage: "magnifyingglass")}
-            .tag(1)
-            NavigationView { MovieSearchView() }
-            .tabItem { Label("Watch list", systemImage: "magnifyingglass")}
-            .tag(2)
+        ZStack{
+           
+               
+            TabView {
+                NavigationView { MovieHomeView() }
+                .tabItem { Label("Home", systemImage: "film")}
+                .tag(0)
+                
+                NavigationView { MovieSearchView() }
+                .tabItem { Label("Search", systemImage: "magnifyingglass")}
+                .tag(1)
+                NavigationView { WatchListView() }
+                .tabItem { Label("Watch list", systemImage: "movieclapper")}
+                .tag(2)
+            }
         }
+        .preferredColorScheme(.dark)
+       
     }
 }
 

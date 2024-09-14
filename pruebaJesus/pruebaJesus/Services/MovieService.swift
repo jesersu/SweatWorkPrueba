@@ -33,6 +33,7 @@ enum MovieListEndpoint: String, CaseIterable, Identifiable {
         case .topRated: return "Top Rated"
         }
     }
+    
 }
 
 enum MovieError: Error, CustomNSError {

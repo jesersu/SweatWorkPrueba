@@ -15,25 +15,29 @@ struct MovieThumbnailCarouselView: View {
     var thumbnailType: MovieThumbnailType = .poster()
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text(title)
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.horizontal)
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack(alignment: .top, spacing: 16) {
-                    ForEach(self.movies) { movie in
-                        NavigationLink(destination: MovieDetailView(movieId: movie.id, movieTitle: movie.title)) {
-                            MovieThumbnailView(movie: movie, thumbnailType: thumbnailType)
-                                .movieThumbnailViewFrame(thumbnailType: thumbnailType)
-                        }.buttonStyle(.plain)
+        ZStack{
+            VStack(alignment: .leading, spacing: 16) {
+                Text(title)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.horizontal)
+                    .foregroundColor(Color.theme.text)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHStack(alignment: .top, spacing: 16) {
+                        ForEach(self.movies) { movie in
+                            NavigationLink(destination: MovieDetailView(movieId: movie.id, movieTitle: movie.title)) {
+                                MovieThumbnailView(movie: movie, thumbnailType: thumbnailType)
+                                    .movieThumbnailViewFrame(thumbnailType: thumbnailType)
+                            }.buttonStyle(.plain)
+                        }
                     }
                 }
                 .padding(.horizontal)
                 .padding(.vertical, 8)
             }
         }
+ 
         
     }
 }
@@ -44,11 +48,13 @@ fileprivate extension View {
     func movieThumbnailViewFrame(thumbnailType: MovieThumbnailType) -> some View {
         switch thumbnailType {
         case .poster:
-            self.frame(width: 204, height: 306)
+            self.frame(width: 150, height: 280)
         case .backdrop:
             self
                 .aspectRatio(16/9, contentMode: .fit)
                 .frame(height: 160)
+        case .gridView:
+            self.frame(width: 100, height: 250)
         }
     }
     

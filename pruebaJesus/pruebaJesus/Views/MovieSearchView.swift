@@ -24,6 +24,7 @@ struct MovieSearchView: View {
         .overlay(overlayView)
         .onAppear { movieSearchState.startObserve() }
         .listStyle(.plain)
+        .background(Color.theme.background)
         .navigationTitle("Search")
     }
     

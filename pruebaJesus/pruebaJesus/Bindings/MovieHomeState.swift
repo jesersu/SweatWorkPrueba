@@ -91,14 +91,15 @@ fileprivate extension MovieListEndpoint {
     
     var sortIndex: Int {
         switch self {
-        case .nowPlaying:
-            return 0
-        case .upcoming:
-            return 1
-        case .topRated:
-            return 2
         case .popular:
+            return 0
+        case .nowPlaying:
+            return 1
+        case .upcoming:
+            return 2
+        case .topRated:
             return 3
+  
         }
     }
     

@@ -13,24 +13,28 @@ struct MovieHomeView: View {
     @StateObject private var movieHomeState = MovieHomeState()
     
     var body: some View {
+ 
         List {
-            ForEach(movieHomeState.sections) {
                 MovieThumbnailCarouselView(
-                    title: $0.title,
-                    movies: $0.movies,
-                    thumbnailType: $0.thumbnailType)
-            }
-            .listRowInsets(.init(top: 8, leading: 0, bottom: 8, trailing: 0))
-            .listRowSeparator(.hidden)
+                    title: movieHomeState.sections.first?.title ?? "",
+                    movies: movieHomeState.sections.first?.movies ?? [],
+                    thumbnailType: movieHomeState.sections.first?.thumbnailType ?? .poster(showTitle: false))
+                
+                GridView(movieSections: movieHomeState.sections)
         }
-        .task { loadMovies(invalidateCache: false) }
-        .refreshable { loadMovies(invalidateCache: true) }
+
+        .task {
+            loadMovies(invalidateCache: false) }
+        .refreshable {
+            loadMovies(invalidateCache: true) }
         .overlay(DataFetchPhaseOverlayView(
             phase: movieHomeState.phase,
             retryAction: { loadMovies(invalidateCache: true) })
         )
         .listStyle(.plain)
         .navigationTitle("What do you want to watch?")
+        .navigationBarTitleDisplayMode(.inline)
+       
     }
     
     @Sendable

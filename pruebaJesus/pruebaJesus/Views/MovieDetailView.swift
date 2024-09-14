@@ -59,7 +59,7 @@ struct MovieDetailListView: View {
             Text(movie.overview)
             HStack {
                 if !movie.ratingText.isEmpty {
-                    Text(movie.ratingText).foregroundColor(.yellow)
+                    Text("★").foregroundColor(.yellow)
                 }
                 Text(movie.scoreText)
             }

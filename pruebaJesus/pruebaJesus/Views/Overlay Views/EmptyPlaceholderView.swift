@@ -22,6 +22,7 @@ struct EmptyPlaceholderView: View {
                     .font(.system(size: 52))
             }
             Text(text)
+                .foregroundColor(Color.theme.text)
             Spacer()
         }
     }
