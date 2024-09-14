@@ -19,11 +19,13 @@ These categories should be displayed in grid form, limiting to only 6 movies
 
     The main purposes are:
 
-    Enhance Cohesion: By ensuring that a class or module has a single responsibility, it becomes more cohesive. 
+    - Enhance Cohesion: By ensuring that a class or module has a single responsibility, it becomes more cohesive. 
 
-    Improve Maintainability: When a class has only one reason to change.
+    - Improve Maintainability: When a class has only one reason to change.
 
-    Facilitate Reusability: Classes with a single responsibility are more likely to be reusable in different contexts because they are not tightly coupled with other functionalities2.
+    - Facilitate Reusability: Classes with a single responsibility are more likely to be reusable in different contexts because they are not tightly coupled with other functionalities2.
+
+    - Simplify Testing: A class with a single responsibility is easier to test because it has a well-defined behavior and fewer dependencies4. functionalities2.
 
     Simplify Testing: A class with a single responsibility is easier to test because it has a well-defined behavior and fewer dependencies4.
 
