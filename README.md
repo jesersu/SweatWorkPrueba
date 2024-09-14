@@ -33,10 +33,10 @@ These categories should be displayed in grid form, limiting to only 6 movies
 
 - Detail how you would do everything that you have not completed.
 
-    For the Watchlist part I had planned to use coredata to store the movies that are chosen as desired to watch, an attribute "watchlist: Bool" would have to be added to the "Movie" structure that would manage the "watchlist" status. When entering the interface where the desired movies are displayed, only those that have this active status would be shown.
+    For the Watchlist part I had planned to use CodeData to store the movies that are chosen as desired to watch, an attribute "watchlist: Bool" would have to be added to the "Movie" structure that would manage the "watchlist" status. When entering the interface where the desired movies are displayed, only those that have this active status would be shown.
 
     
-## Acees Token fom TMDB 
+## Access Token fom TMDB 
 
 You need to get the tmdb token to be able to use the services
 
