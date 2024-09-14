@@ -12,7 +12,7 @@ Below 3 categories should be shown:
 These categories should be displayed in grid form, limiting to only 6 movies
 ## Features
 For this project we used:
-- LazyHStack and LazyVGrid: Views are created only when they are about to appear on the screen, which optimizes memory usage and performance1.
+- LazyHStack and LazyVGrid: Views are created only when they are about to appear on the screen, which optimizes memory usage and performance.
     ![Image](https://i.ibb.co/Xb0vJxn/Captura-de-pantalla-2024-09-14-a-la-s-6-05-27-p-m.png)
 
     ![Image](https://i.ibb.co/mS2jN0x/Captura-de-pantalla-2024-09-14-a-la-s-6-06-03-p-m.png)
