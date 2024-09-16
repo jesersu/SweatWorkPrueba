@@ -23,7 +23,9 @@ For this project we used:
   - Use of DispatchQueue .background to perform background task and  DispatchQueue.main.async to update UI. I use [weak self] to prevent ARC.
     ![threads](http://imgfz.com/i/2CLnEHM.png)
 - Own tab bar component for grid section
-    ![tababr](https://i.ibb.co/KwBJ8Rm/Captura-de-pantalla-2024-09-14-a-la-s-6-28-58-p-m.png)
+    ![tabar](https://i.ibb.co/KwBJ8Rm/Captura-de-pantalla-2024-09-14-a-la-s-6-28-58-p-m.png)
+- Unit Test
+    ![unitTest](http://imgfz.com/i/wrMR3Nh.png)
 
 ### Answer and write 
 
