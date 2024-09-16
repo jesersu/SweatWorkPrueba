@@ -25,7 +25,7 @@ For this project we used:
 - Own tab bar component for grid section
     ![tabar](https://i.ibb.co/KwBJ8Rm/Captura-de-pantalla-2024-09-14-a-la-s-6-28-58-p-m.png)
 - Unit Test: I tested some features
-    ![unitTest](http://imgfz.com/i/wrMR3Nh.png)
+    ![unitTest](http://imgfz.com/i/Am4DlYg.png)
 
 ### Answer and write 
 
