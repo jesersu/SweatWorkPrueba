@@ -20,6 +20,8 @@ For this project we used:
     ![URLSESSION](https://i.ibb.co/DGkTwp5/Captura-de-pantalla-2024-09-14-a-la-s-6-13-01-p-m.png)
 - Use of Singleton: We created a class "MovieStore" with private initializer and only one public constant, to let us use this single instance.
     ![SINGLETON](https://i.ibb.co/6WRTDm7/Captura-de-pantalla-2024-09-14-a-la-s-6-18-44-p-m.png)
+  - Use of DispatchQueue .background to perform background task and  DispatchQueue.main.async to update UI. I use [weak self] to prevent ARC.
+    ![threads](http://imgfz.com/i/2CLnEHM.png)
 - Own tab bar component for grid section
     ![tababr](https://i.ibb.co/KwBJ8Rm/Captura-de-pantalla-2024-09-14-a-la-s-6-28-58-p-m.png)
 
