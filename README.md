@@ -26,6 +26,8 @@ For this project we used:
     ![tabar](https://i.ibb.co/KwBJ8Rm/Captura-de-pantalla-2024-09-14-a-la-s-6-28-58-p-m.png)
 - Unit Test: I tested some features
     ![unitTest](http://imgfz.com/i/Am4DlYg.png)
+  Tambien se probo la respuesta de los servicios
+    ![sericio](http://imgfz.com/i/OcnXI0Q.png)
 
 ### Answer and write 
 
