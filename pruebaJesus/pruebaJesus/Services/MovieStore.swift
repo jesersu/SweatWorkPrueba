@@ -64,29 +64,25 @@ class MovieStore: MovieService {
         urlComponents.queryItems = queryItems
         
         
-        //we add token
+        //For Token we need to create a URLRequest
         guard let urlRequest = urlComponents.url else {
             throw MovieError.invalidEndpoint
         }
         
         var movieRequest = URLRequest(url: urlRequest)
         
-        movieRequest.setValue( //3
+        movieRequest.setValue(
             "Bearer \(token)",
             forHTTPHeaderField: "Authorization"
         )
         
-        
-        guard let finalURL = urlComponents.url else {
-            throw MovieError.invalidEndpoint
-        }
-        
+        //Call service
         let (data, response) = try await urlSession.data(for: movieRequest)
-        
+        //Set response
         guard let httpResponse = response as? HTTPURLResponse, 200..<300 ~= httpResponse.statusCode else {
             throw MovieError.invalidResponse
         }
-        
+        //Decode JSON and return
         return try self.jsonDecoder.decode(D.self, from: data)
     }
 

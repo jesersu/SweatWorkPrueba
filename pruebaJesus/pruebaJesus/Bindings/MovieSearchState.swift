@@ -27,6 +27,8 @@ class MovieSearchState: ObservableObject {
         phase.value ?? []
     }
     
+    var unitTestMovies : [Movie]?
+    
     init(movieService: MovieService = MovieStore.shared) {
         self.movieService = movieService
     }
@@ -66,6 +68,7 @@ class MovieSearchState: ObservableObject {
         
         do {
             let movies = try await movieService.searchMovie(query: trimmedQuery)
+            self.unitTestMovies = movies
             if Task.isCancelled { return }
             guard trimmedQuery == self.trimmedQuery else { return }
             phase = .success(movies)
