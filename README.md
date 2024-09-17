@@ -27,6 +27,10 @@ For this project we used:
 - Unit Test: I tested some features
     ![unitTest](http://imgfz.com/i/Am4DlYg.png)
     ![sericio](http://imgfz.com/i/OcnXI0Q.png)
+- Unit test: Also test screen navigation
+    ![screen]!(![image](https://github.com/user-attachments/assets/663bad82-bc61-4df1-94c2-c4b616fc5c4f)
+![image](https://github.com/user-attachments/assets/663bad82-bc61-4df1-94c2-c4b616fc5c4f)
+)
 
 ### Answer and write 
 
